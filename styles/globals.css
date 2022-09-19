@@ -1,0 +1,168 @@
+html,
+body {
+  background-color: AliceBlue;
+  padding: 0;
+  margin: 0;
+font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  margin-top: 50px;
+  text-align: center;
+  color: #0C33EB;
+  
+}
+
+.container {
+  width: 98%;
+  margin: auto auto;
+  margin-left: 1%;
+  
+
+}
+
+.card-container{
+  margin-top: 40px;;
+  min-height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 300px;
+  margin: 1.5%;
+  border: 3px solid #0C33EB;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+ height: 300px;
+  flex-direction: column;
+  
+}
+
+.card h3{
+  text-align: center;
+
+}
+
+.card h4{
+  
+  margin-top: 80px;
+  text-align: center;
+  color: var(--col);
+  text-shadow: 0 0 2px  var(--col);
+  font-size: 30px;
+}
+
+.card.purple h3{
+  color: #0C72F5;
+  
+}
+
+.card.purple{
+  border-color: #0C72F5;
+  box-shadow: 1px 1px 5px 1px #0C72F5;
+}
+
+.card.blue h3{
+  color: #0CEDF5;
+ 
+}
+
+.card.blue{
+  border-color: #0CEDF5;
+  box-shadow: 1px 1px 5px 1px #0CEDF5;
+}
+
+.card.verde h3{
+  color: #0CEBB4;
+  
+}
+
+.card.verde{
+  border-color: #0CEBB4;
+  box-shadow: 1px 1px 5px 1px #0CEBB4;
+}
+
+.card.verde:hover{
+  
+  box-shadow: 1px 1px 5px 4px #0CEBB4;
+  transition: all 0.1s linear;
+}
+
+.card.blue:hover{
+  
+  box-shadow: 1px 1px 5px 4px #0CEDF5;
+  transition: all 0.1s linear;
+}
+
+.card.purple:hover{
+  
+  box-shadow: 1px 1px 5px 4px #0C33EB;
+  transition: all 0.1s linear;
+}
+
+
+svg{
+  margin-top: -150px;
+  transform: rotate(180deg);
+}
+
+circle{
+  fill: none;
+  stroke-width: 10;
+  stroke: AliceBlue;
+  stroke-linecap: round;
+  z-index: -1;
+}
+
+circle:nth-child(2){
+
+  stroke: var(--col);
+  stroke-dasharray: 500px;
+  stroke-dashoffset: calc(500px - 500px/100 * var(--per));
+  z-index: -1;
+  
+}
+
+table{
+  width: 100%;
+  margin-top: 40px;
+
+}
+
+
+
+.valor{
+  text-align: center;
+  
+}
+
+td,th,tr{
+  border: 1px solid #0C33EB;
+  padding: 10px;
+  
+  
+}
+
+td{
+  width: 9%;
+}
+
+th{
+  background-color: #0C33EB;
+  color: white;
+  
+}
+
+.ip{
+  background-color: rgba(255, 215, 0,0.5);
+}
