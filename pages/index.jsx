@@ -73,7 +73,7 @@ const db = require('../data.json');
 
 export async function getServerSideProps(context) {
 
-  const res = await (await fetch('http://173.16.10.151:3003/api/load')).json();
+  const res = await (await fetch( process.env.HOST + '/api/load')).json();
   var data = res.data;
   
   return {

@@ -1,7 +1,6 @@
 
 const { MongoClient } = require("mongodb");
-const uri =
-  "mongodb://173.16.10.151:27017/";
+const uri = process.env.HOST;
 
 
     export default  async function handler(req, res) {
